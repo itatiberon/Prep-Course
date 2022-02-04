@@ -71,7 +71,7 @@ function divide(x, y) {
     var x= 50
     var y= 5
     division= 50/5
-    return "multiplicacion"
+    return "division"
   
 }
 
