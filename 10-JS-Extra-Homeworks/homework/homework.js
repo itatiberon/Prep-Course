@@ -18,6 +18,13 @@ function numberOfCharacters(string) {
   //en formato par clave-valor.
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
   //Escribe tu código aquí
+    const objeto= {};
+  for (let i = 0; i < string.length; i++) {
+    if (objeto.hasOwnProperty (string[i])){
+      objeto[string[i]]++
+    }else objeto [string[i]] = 1    
+  }; 
+  return objeto;
 }
 
 
@@ -26,6 +33,15 @@ function capToFront(s) {
   //al principio de la palabra.
   //Ejemplo: soyHENRY -> HENRYsoy
   //Escribe tu código aquí
+  var conver = s.split(" ");
+  let mayusculas = [];
+  let minusculas =[];
+  for(i=0; i<conver[i].toUpperCase()){
+    mayusculas.push(conver[i])
+  } else {
+    minusculas.push(conver[i])
+  }
+  return mayusculas.join(" ")+ minusculas.join(" ");
 }
 
 
